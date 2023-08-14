@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card" *ngFor="let product of products">
+    <img [src]="product.thumbnail" />
+    <h3>{{ product.title }}</h3>
+    <span>{{ product.price }}</span>
+    <p>{{ product.description }}</p>
+  </div>
+</div>
+
+<div class="loader-container" *ngIf="loader">
+  <div class="loader"></div>
+</div>
